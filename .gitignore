@@ -1,0 +1,7 @@
+.classpath
+.project
+.settings/
+.springBeans
+target/
+/bin/
+src/main/resources/application.properties
