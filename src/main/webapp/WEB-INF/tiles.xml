@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/views/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="pagecss" value="/WEB-INF/views/pagecss.jsp"
+			cascade="true" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp"
+			cascade="true" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/sidebar.jsp"
+			cascade="true" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="pagescript" value="/WEB-INF/views/pagescript.jsp"
+			cascade="true" />
+	</definition>
+	<!-- admin tiles starts -->
+	<definition name="dashboard" extends="base.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content" value="/WEB-INF/views/maincontent.jsp" />
+	</definition>
+
+	<definition name="categoryForm" extends="base.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content" value="/WEB-INF/views/categoryForm.jsp" />
+	</definition>
+
+	<definition name="categoryList" extends="base.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content" value="/WEB-INF/views/categoryList.jsp" />
+	</definition>
+
+	<definition name="AdminRegister" extends="base.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content" value="/WEB-INF/views/adminRegister.jsp" />
+	</definition>
+
+	<definition name="AdminList" extends="base.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content" value="/WEB-INF/views/adminList.jsp" />
+	</definition>
+
+	<definition name="ShowEditForm" extends="base.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content" value="/WEB-INF/views/showEditForm.jsp" />
+	</definition>
+
+	<definition name="AdminLogin" extends="base.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content" value="/WEB-INF/views/logintheme.jsp" />
+	</definition>
+
+	<definition name="AdminDetail" extends="base.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content" value="/WEB-INF/views/adminDetail.jsp" />
+	</definition>
+
+	<definition name="UserDetail" extends="base.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content" value="/WEB-INF/views/userDetail.jsp" />
+	</definition>
+
+	<!-- admin tiles end -->
+
+	<definition name="frontbase.definition"
+		template="/WEB-INF/views/frontend/frontendtemplate.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="resources"
+			value="/WEB-INF/views/frontend/resources.jsp" cascade="true" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/frontend/frontendheader.jsp" cascade="true" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/frontend/footer.jsp"
+			cascade="true" />
+	</definition>
+
+	<definition name="home" extends="frontbase.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/content.jsp" />
+	</definition>
+	
+	
+	<definition name="homePagination" extends="frontbase.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/contentPagination.jsp" />
+	</definition>
+	
+
+	<definition name="productdetail" extends="frontbase.definition">
+		<put-attribute name="title" value="Product Detail" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/productdetail.jsp" />
+	</definition>
+
+	<definition name="editAssetForm" extends="frontbase.definition">
+		<put-attribute name="title" value="Edit Asset" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/editAssetForm.jsp" />
+	</definition>
+	<definition name="addAssetForm" extends="frontbase.definition">
+		<put-attribute name="title" value="Add Asset" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/addAssetForm.jsp" />
+	</definition>
+
+	<definition name="login" extends="frontbase.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content" value="/WEB-INF/views/frontend/login.jsp" />
+	</definition>
+	<definition name="register" extends="frontbase.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/register.jsp" />
+	</definition>
+
+	<definition name="users" extends="frontbase.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/userProfile.jsp" />
+	</definition>
+
+	<definition name="error" extends="frontbase.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content" value="/WEB-INF/views/frontend/error.jsp" />
+	</definition>
+
+	<definition name="myproduct" extends="frontbase.definition">
+		<put-attribute name="title" value="My Products" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/myProducts.jsp" />
+	</definition>
+
+	<definition name="pageUnderConstruction" extends="frontbase.definition">
+		<put-attribute name="title" value="My Products" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/pageUnderConstruction.jsp" />
+	</definition>
+
+
+	<definition name="userEditForm" extends="frontbase.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/userEditForm.jsp" />
+	</definition>
+
+	<!-- adminlogin template -->
+
+	<definition name="adminlogin.definition"
+		template="/WEB-INF/views/adminLoginTemplate.jsp">
+		<put-attribute name="content" value="" />
+	</definition>
+
+	<definition name="adminloginpage" extends="adminlogin.definition">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="content" value="/WEB-INF/views/logintheme.jsp" />
+	</definition>
+
+	<!-- end adminlogin template -->
+
+</tiles-definitions>
